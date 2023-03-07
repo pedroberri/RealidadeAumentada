@@ -9,14 +9,10 @@
         <body>
           <a-scene mindar-image="imageTargetSrc: ./messi.mind" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-assets>
-              <img id="card" src="./b.jfif" />
-              <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.1/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+                <video id="penguin-sledding" autoplay loop="true" src="penguin-sledding.mp4"></video>
             </a-assets>
-      
-            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-            <a-entity mindar-image-target="targetIndex: 0">
-              <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-            </a-entity>
+            <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+            <a-video src="airbending.mp4"></a-video>
           </a-scene>
         </body>
       </html>
